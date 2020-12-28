@@ -9,7 +9,7 @@ const Header = (props) => {
         <div>
             <div className='div-center center-align pt-5'>
                 <a href='/' className='font-1'>
-                    <span className='text-white font-weight-light'>Peyton</span>
+                    <span className='color-1 font-weight-light'>Peyton</span>
                     <span className='font-italic font-weight-bold nav-active'>S.</span>
                 </a>
             </div>

@@ -7,6 +7,15 @@ body {
 	min-height: 100%;
 }
 
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	padding-bottom: 4rem;
+}
+
 :root {
 	--persian-green: #2a9d8f;
 	--orange-yellow-crayola: #e9c46a;
@@ -19,6 +28,18 @@ body {
 	--spacing-one: calc(1rem * 0.5);
 	--spacing-two: calc(1rem);
 	--spacing-five: calc(2.5rem);
+}
+
+.fa-linkedin:hover {
+	color: var(--burnt-sienna);
+}
+
+.fa-github:hover {
+	color: var(--burnt-sienna);
+}
+
+.color-1 {
+	color: var(--orange-yellow-crayola);
 }
 
 .cs-1 {
@@ -110,4 +131,11 @@ a:hover {
 .box {
 	align-items: center;
 	justify-content: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
 }

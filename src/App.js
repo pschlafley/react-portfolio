@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer'
 import React, { useState } from 'react';
 
 function App() {
@@ -13,12 +14,15 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div>
-      <Header
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-      ></Header>
+    <div className='page-container'>
+      <div className='content-wrap'>
+        <Header
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+        ></Header>
+        <Footer />
+      </div>
     </div>
   );
 }

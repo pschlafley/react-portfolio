@@ -11,11 +11,11 @@ const Navigation = (props) => {
 
     return (
         <nav>
-            <ul>
+            <ul className='flex-row'>
                 {categories.map((category) => {
                     return (
                         <li
-                            className={`pointer w-25 cs-2 my-2 list-style ${currentCategory.name === category.name && 'nav-active'
+                            className={`pointer px-2 cs-2 my-2 list-style ${currentCategory.name === category.name && 'nav-active'
                                 }`} key={category.name}>
                             <span onClick={() => {
                                 setCurrentCategory(category);
@@ -27,7 +27,6 @@ const Navigation = (props) => {
                 })}
             </ul>
         </nav>
-
     );
 }
 

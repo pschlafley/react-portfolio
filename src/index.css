@@ -89,29 +89,25 @@ a:hover {
 	list-style-type: none;
 }
 
-h1 {
-	font-size: 2.25rem;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: 15% 500px auto;
-}
-
-.item-1 {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 1;
-}
-
-.item-2 {
-	grid-column-start: 1;
-	grid-column-end: 1;
+.font-1 {
+	font-size: 2.5rem;
 }
 
 .flex-row {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.div-center {
+	margin: auto;
+	width: 50%;
+}
+
+.box {
+	align-items: center;
+	justify-content: center;
 }

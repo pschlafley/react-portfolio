@@ -13,7 +13,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div>
+    <div className='grid-container'>
       <Header
         categories={categories}
         setCurrentCategory={setCurrentCategory}

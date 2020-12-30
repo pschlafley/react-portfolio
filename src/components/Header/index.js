@@ -4,7 +4,7 @@ import Navigation from '../Navigation';
 
 const Header = (props) => {
 
-    const { categories, setCurrentCategory, currentCategory } = props;
+    const { currentPage, setCurrentPage } = props;
     return (
         <div>
             <div className='div-center center-align pt-5'>
@@ -15,9 +15,8 @@ const Header = (props) => {
             </div>
             <div className='flex-row pt-3 pr-5 box'>
                 <Navigation
-                    categories={categories}
-                    setCurrentCategory={setCurrentCategory}
-                    currentCategory={currentCategory}
+                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
                 />
             </div>
         </div>

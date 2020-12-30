@@ -23,11 +23,14 @@ body {
 	--burnt-sienna: #e76f51;
 	--light: #fafafa;
 	--charcoal: #264653;
-	--darker: #111111;
-	--error: rgb(228, 46, 1);
+	--error: #e1515d;
 	--spacing-one: calc(1rem * 0.5);
 	--spacing-two: calc(1rem);
 	--spacing-five: calc(2.5rem);
+}
+
+.error-text {
+	color: var(--error);
 }
 
 .fa-linkedin:hover {
@@ -40,6 +43,18 @@ body {
 
 .color-1 {
 	color: var(--orange-yellow-crayola);
+}
+
+.color-2 {
+	color: var(--sandy-brown);
+}
+
+.color-3 {
+	color: var(--persian-green);
+}
+
+.background-color {
+	background-color: var(--charcoal);
 }
 
 .cs-1 {
@@ -99,6 +114,10 @@ body {
 	color: var(--burnt-sienna);
 }
 
+.non-active {
+	color: var(--sandy-brown);
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -138,4 +157,110 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 4rem;
+}
+
+form {
+	margin: auto;
+	width: 40%;
+}
+
+textarea {
+	width: 500px;
+	height: 120px;
+	border: 1px solid #cccccc;
+	padding: 5px;
+}
+
+label {
+	color: var(--sandy-brown);
+}
+
+.section-title {
+	color: var(--orange-yellow-crayola);
+	font-weight: lighter;
+	text-align: center;
+}
+
+input {
+	font-size: 1rem;
+	padding: 0.25rem;
+	border: 1px solid var(--charcoal);
+	outline: none;
+	border-radius: 3px;
+	transition: box-shadow 0.2s;
+}
+
+input:focus {
+	border: 1px solid var(--secondary);
+	box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+button {
+	background: var(--persian-green);
+	border: 0;
+	border-radius: 5px;
+	color: var(--orange-yellow-crayola);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 10px 15px;
+}
+
+button:hover {
+	background-color: var(--orange-yellow-crayola);
+	color: var(--persian-green);
+}
+
+.about-image {
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 35%;
+	padding-right: 10px;
+}
+
+.carousel {
+	/* background-color: var(--sandy-brown); */
+	width: 75%;
+	margin: 0 auto 0 auto;
+}
+
+.tune-out-img {
+	width: 75%;
+}
+
+.card {
+	padding: 50px;
+	width: 35%;
+	height: 20%;
+	display: block;
+	margin: 0 auto 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .card-container {
+
+} */
+
+.container {
+	padding: 2px 16px;
+}
+
+.project-link {
+	color: var(--orange-yellow-crayola);
+	background-color: var(--persian-green);
+}
+
+.project-link:hover {
+	color: var(--persian-green);
+	background-color: var(--orange-yellow-crayola);
+}
+
+.technologies {
+	color: var(--sandy-brown);
 }

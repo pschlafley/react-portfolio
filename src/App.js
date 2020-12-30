@@ -1,26 +1,34 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer'
+import ContactForm from './components/Contact';
+import About from './components/About';
+import Project from './components/Project';
 import React, { useState } from 'react';
 
 function App() {
 
-  const [categories] = useState([
-    { name: 'About Me' },
-    { name: 'Portfolio' },
-    { name: 'Contact' }
-  ]);
+  const [currentPage, setCurrentPage] = useState('About Me');
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'Contact Me':
+        return <ContactForm />;
+      case 'Portfolio':
+        return <Project />;
+      default:
+        return <About />
+    }
+  };
 
   return (
     <div className='page-container'>
       <div className='content-wrap'>
         <Header
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         ></Header>
+        {renderPage(currentPage)}
         <Footer />
       </div>
     </div>

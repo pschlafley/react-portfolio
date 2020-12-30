@@ -1,33 +1,31 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 const Navigation = (props) => {
 
-    const { categories, currentCategory, setCurrentCategory } = props;
+    const tabs = ['About Me', 'Portfolio', 'Contact Me'];
+
+    const { currentPage, setCurrentPage } = props;
 
     useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+        document.title = currentPage;
+    }, [currentPage]);
 
     return (
-        <nav>
-            <ul className='flex-row'>
-                {categories.map((category) => {
-                    return (
-                        <li
-                            className={`pointer px-2 cs-2 my-2 list-style ${currentCategory.name === category.name && 'nav-active'
-                                }`} key={category.name}>
-                            <span onClick={() => {
-                                setCurrentCategory(category);
-                            }}>
-                                {category.name}
-                            </span>
-                        </li>
-                    );
-                })}
-            </ul>
-        </nav>
-    );
+        <ul className='flex-row'>
+            {tabs.map(tab => (
+                <li className='pointer px-2 cs-2 my-2 list-style' key={tab}>
+                    <span
+                        onClick={() => setCurrentPage(tab)}
+                        className={
+                            currentPage === tab ? 'nav-active' : 'non-active'
+                        }
+                    >
+                        {tab}
+                    </span>
+                </li>
+            ))}
+        </ul>
+    )
 }
 
 export default Navigation;

@@ -11,7 +11,7 @@ const projects = [
     {
         name: 'Tune Out',
         src: tuneOut,
-        alt: `Tune Out's landing Page`,
+        alt: '',
         description: "TuneOut Entertainment App -- This application was a group project for UPenn Coding Bootcamp that features API's from TasteDive and NY Times.The user base and audience are those who need to tune out every now and then to catch their breath and enjoy some entertaining musicians, artists, authors, podcasts and video games.",
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://bspiewak6.github.io/music/',
@@ -20,8 +20,8 @@ const projects = [
     {
         name: 'Simply ReUse',
         src: simplyReuse,
-        alt: `Tune Out's landing Page`,
-        description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+        alt: ``,
+        description: "TuneOut Entertainment App -- This application was a group project for UPenn Coding Bootcamp that features API's from TasteDive and NY Times.The user base and audience are those who need to tune out every now and then to catch their breath and enjoy some entertaining musicians, artists, authors, podcasts and video games.",
         technologies: ['Node.js, Express.js, JavaScript, MySQL, Sequelize, Handlebars, bcrypt, dotenv, fuse.js, CSS'],
         url: 'https://simplyreuse3.herokuapp.com/',
         github: 'https://github.com/pschlafley/Simply-ReUse'
@@ -29,7 +29,7 @@ const projects = [
     {
         name: 'Weather Dashboard',
         src: WD,
-        alt: `Weather Dashboard's website`,
+        alt: ``,
         description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://pschlafley.github.io/weatherDashboard/',
@@ -38,7 +38,7 @@ const projects = [
     {
         name: 'Work Day Scheduler',
         src: workDay,
-        alt: `Work Day Scheduler's Web Page`,
+        alt: ``,
         description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://pschlafley.github.io/Scheduler/',
@@ -47,7 +47,7 @@ const projects = [
     {
         name: 'Budget Tracker',
         src: budget,
-        alt: `Budget Tracker's Web Page`,
+        alt: ``,
         description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://budget-tracker100.herokuapp.com/',
@@ -56,7 +56,7 @@ const projects = [
     {
         name: 'Just Tech News',
         src: justTechNews,
-        alt: `Just Tech News's Web Page`,
+        alt: ``,
         description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://just-tech-news20.herokuapp.com/',
@@ -65,7 +65,7 @@ const projects = [
     {
         name: 'Web Dev Blogs',
         src: webDevBlogs,
-        alt: `Web Dev Blogs's Web Page`,
+        alt: ``,
         description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
         technologies: ['HTML, CSS, JavaScript'],
         url: 'https://web-dev-blogs.herokuapp.com/',
@@ -76,14 +76,51 @@ const projects = [
 const Project = () => {
     return (
         <div>
-            <div className='flex-row'>
+            <div>
+                <h1 className='about-tech my-5 px-2 cs-2 padding-top-2'>Technologies</h1>
+                <div className="container">
+                    <div className="row">
+                        <div className="p-5">
+                            <i className="color-2 fab fa-html5 fa-4x"></i>
+                            <p className='color-2'>HTML5</p>
+                        </div>
+                        <div className="p-5">
+                            <i className="color-2 fab fa-css3-alt fa-4x"></i>
+                            <p className='color-2'>CSS</p>
+                        </div>
+                        <div className="p-5">
+                            <i className="color-2 fab fa-js-square fa-4x"></i>
+                            <p className='color-2'>JavaScript</p>
+                        </div>
+                        <div className="p-5">
+                            <i className="fab color-2 fa-node fa-4x"></i>
+                            <p className='color-2'>NodeJs</p>
+                        </div>
+                        <div className="p-5">
+                            <i className="fab color-2 fa-git fa-4x"></i>
+                        </div>
+                        <div className="p-5">
+                            <i className="fab color-2 fa-github-square fa-4x"></i>
+                            <p className='color-2'>Github</p>
+                        </div>
+                        <div className="p-5">
+                            <i className="fab color-2 fa-bootstrap fa-4x"></i>
+                            <p className='color-2'>Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='padding-top-1'>
+                <h1 className='about-tech my-5 px-2 cs-2'>Projects</h1>
+            </div>
+            <div className='project-card-wrapper'>
                 {projects.map((project, i) => {
                     return (
                         <div className='card background-color my-5' key={i}>
                             <img
                                 src={project.src}
                                 alt={project.alt}
-                                className='d-block w-100'
+                                className='w-100'
                             />
                             <div className='container pt-5'>
                                 <h4><b>{project.name}</b></h4>
@@ -91,10 +128,10 @@ const Project = () => {
                                     <h5 className='technologies font-weight-light'>Technologies</h5>
                                     <li className='technologies list-style font-weight-light'>{project.technologies}</li>
                                 </ul>
-                                <p>{project.description}</p>
+                                <p className='project-description'>{project.description}</p>
                                 <a className='project-link btn' href={project.url} target='_blank' rel='noreferrer'>
                                     Visit Page
-                            </a>
+                                </a>
 
                                 <a className='project-link btn ml-3' href={project.github} target='_blank' rel='noreferrer'>Github Repo</a>
                             </div>
@@ -102,9 +139,9 @@ const Project = () => {
                     )
                 })}
             </div>
-
         </div>
     )
 }
 
 export default Project;
+

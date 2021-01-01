@@ -76,42 +76,8 @@ const projects = [
 const Project = () => {
     return (
         <div>
-            <div>
-                <h1 className='about-tech my-5 px-2 cs-2 padding-top-2'>Technologies</h1>
-                <div className="container">
-                    <div className="row">
-                        <div className="p-5">
-                            <i className="color-2 fab fa-html5 fa-4x"></i>
-                            <p className='color-2'>HTML5</p>
-                        </div>
-                        <div className="p-5">
-                            <i className="color-2 fab fa-css3-alt fa-4x"></i>
-                            <p className='color-2'>CSS</p>
-                        </div>
-                        <div className="p-5">
-                            <i className="color-2 fab fa-js-square fa-4x"></i>
-                            <p className='color-2'>JavaScript</p>
-                        </div>
-                        <div className="p-5">
-                            <i className="fab color-2 fa-node fa-4x"></i>
-                            <p className='color-2'>NodeJs</p>
-                        </div>
-                        <div className="p-5">
-                            <i className="fab color-2 fa-git fa-4x"></i>
-                        </div>
-                        <div className="p-5">
-                            <i className="fab color-2 fa-github-square fa-4x"></i>
-                            <p className='color-2'>Github</p>
-                        </div>
-                        <div className="p-5">
-                            <i className="fab color-2 fa-bootstrap fa-4x"></i>
-                            <p className='color-2'>Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='padding-top-1'>
-                <h1 className='about-tech my-5 px-2 cs-2'>Projects</h1>
+            <div className='pt-4'>
+                <h1 className='section-title my-5 px-2 cs-2'>Projects</h1>
             </div>
             <div className='project-card-wrapper'>
                 {projects.map((project, i) => {

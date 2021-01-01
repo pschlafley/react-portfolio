@@ -4,8 +4,8 @@ import Image from 'react-bootstrap/Image';
 
 function About() {
     return (
-        <section>
-            <h1 className='my-5 px-2 cs-2 section-title'>About Me</h1>
+        <section className='pt-3'>
+            <h2 className='my-5 px-2 cs-2 pt-2 section-title'>About Me</h2>
             <Image src={myPhoto} className='about-image' />
             <div>
                 <p className='center-align cs-2 px-1 py-2 my-5'>

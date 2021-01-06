@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 
 const Navigation = (props) => {
 
-    const tabs = ['About Me', 'Portfolio', 'Resume', 'Contact Me'];
-
-    const { currentPage, setCurrentPage } = props;
+    const { tabs, currentPage, setCurrentPage } = props;
 
     useEffect(() => {
         document.title = currentPage;

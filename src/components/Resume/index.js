@@ -52,14 +52,16 @@ const Resume = () => {
 
 
     return (
-        <div className='pt-3 div-center'>
-            <h3 className='section-title'>Resume</h3>
-            <p>Download my <a href='https://drive.google.com/file/d/1uwTtnRiq4hdjnw8tVz7Z0uqXJIJOzlNp/view?usp=sharing' target='_blank' rel='noreferrer' download='' className='resume-link'>resume</a></p>
+        <div className='pt-5 div-center'>
+            <h1 className='section-title'>Resume</h1>
+            <div className='w-25'>
+                <p id='resume'>View my <a href='https://drive.google.com/file/d/1uwTtnRiq4hdjnw8tVz7Z0uqXJIJOzlNp/view?usp=sharing' target='_blank' rel='noreferrer' download='' className='resume-link'>resume</a></p>
+            </div>
             <h2 className='font-weight-lighter pt-5'>Front-End Proficiencies</h2>
             <ul className='pt-3'>
                 {frontEnd.map((tech, i) => {
                     return (
-                        <li key={i} className='pt-2'>
+                        <li key={i} className='pt-2 color-2'>
                             {tech.name}
                         </li>
                     )
@@ -69,7 +71,7 @@ const Resume = () => {
             <ul className='pt-3'>
                 {backEnd.map((tech, i) => {
                     return (
-                        <li key={i} className='pt-2'>
+                        <li key={i} className='pt-2 color-2'>
                             {tech.name}
                         </li>
                     )

@@ -59,6 +59,10 @@ body {
 	color: var(--persian-green);
 }
 
+.color-4 {
+	color: var(--burnt-sienna);
+}
+
 .resume-link {
 	color: var(--sandy-brown);
 	font-style: italic;
@@ -128,6 +132,8 @@ body {
 
 .nav-active {
 	color: var(--burnt-sienna);
+	border: 1px #e76f51 dashed;
+	padding: 2px;
 }
 
 .non-active {
@@ -250,9 +256,8 @@ button:hover {
 }
 
 .card {
-	height: 40em;
 	width: 30em;
-	margin: 20px;
+	margin: 10px;
 	position: relative;
 	border-radius: 16px;
 	overflow: hidden;
@@ -281,6 +286,7 @@ button:hover {
 	color: var(--sandy-brown);
 }
 
-.project-description {
-	font-size: 75%;
+#resume {
+	border: 1px #e76f51 dashed;
+	text-align: center;
 }

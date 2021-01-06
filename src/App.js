@@ -11,6 +11,8 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState('About Me');
 
+  const tabs1 = ['About Me', 'Portfolio', 'Resume', 'Contact Me'];
+
   const renderPage = () => {
     switch (currentPage) {
       case 'Contact Me':
@@ -28,6 +30,7 @@ function App() {
     <div className='page-container'>
       <div className='content-wrap'>
         <Header
+          tabs1={tabs1}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         ></Header>

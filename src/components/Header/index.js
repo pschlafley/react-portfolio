@@ -14,7 +14,7 @@ const Header = (props) => {
             </div>
             <div className='flex-row pt-3 pr-5 box'>
                 <Navigation
-                    tabs={props.tabs1}
+                    tabs={props.tabs}
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                 />

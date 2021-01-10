@@ -64,29 +64,27 @@ const Project = () => {
                 <h1 className='section-title my-5 px-2 cs-2'>Projects</h1>
             </div>
             <div className='project-card-wrapper'>
-                {projects.map((project, i) => {
-                    return (
-                        <div className='card background-color my-5' key={i}>
-                            <img
-                                src={project.src}
-                                alt={project.alt}
-                                className='w-100'
-                            />
-                            <div className='container pt-5'>
-                                <h4><b>{project.name}</b></h4>
-                                <ul className='p-3'>
-                                    <h5 className='technologies font-weight-light'>Technologies</h5>
-                                    <li className='technologies list-style font-weight-light'>{project.technologies}</li>
-                                </ul>
-                                <a className='project-link btn' href={project.url} target='_blank' rel='noreferrer'>
-                                    Visit Page
+                {projects.map((project, i) => (
+                    <div className='card background-color my-5' key={i}>
+                        <img
+                            src={project.src}
+                            alt={project.alt}
+                            className='w-100'
+                        />
+                        <div className='container pt-5'>
+                            <h4><b>{project.name}</b></h4>
+                            <ul className='p-3'>
+                                <h5 className='technologies font-weight-light'>Technologies</h5>
+                                <li className='technologies list-style font-weight-light'>{project.technologies}</li>
+                            </ul>
+                            <a className='project-link btn' href={project.url} target='_blank' rel='noreferrer'>
+                                Visit Page
                                 </a>
 
-                                <a className='project-link btn ml-3' href={project.github} target='_blank' rel='noreferrer'>Github Repo</a>
-                            </div>
+                            <a className='project-link btn ml-3' href={project.github} target='_blank' rel='noreferrer'>Github Repo</a>
                         </div>
-                    )
-                })}
+                    </div>
+                ))}
             </div>
         </div>
     )

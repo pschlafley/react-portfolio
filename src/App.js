@@ -30,7 +30,7 @@ function App() {
     <div className='page-container'>
       <div className='content-wrap'>
         <Header
-          tabs1={tabs1}
+          tabs={tabs1}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         ></Header>

@@ -22,6 +22,10 @@ body {
 	--spacing-five: calc(2.5rem);
 }
 
+#brand-statement {
+	line-height: 1.6;
+}
+
 .padding-top-1 {
 	padding-top: 150px;
 }

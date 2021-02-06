@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5d6837d2.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.9101a7c3.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.9101a7c3.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.700f04d3.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.700f04d3.js.map",
-    "static/js/2.56b1c3cd.chunk.js": "/react-portfolio/static/js/2.56b1c3cd.chunk.js",
-    "static/js/2.56b1c3cd.chunk.js.map": "/react-portfolio/static/js/2.56b1c3cd.chunk.js.map",
-    "static/js/3.ae010aed.chunk.js": "/react-portfolio/static/js/3.ae010aed.chunk.js",
-    "static/js/3.ae010aed.chunk.js.map": "/react-portfolio/static/js/3.ae010aed.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.bb9bb73b.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.bb9bb73b.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.aef1985b.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.aef1985b.js.map",
+    "static/js/2.a31f16cb.chunk.js": "/react-portfolio/static/js/2.a31f16cb.chunk.js",
+    "static/js/2.a31f16cb.chunk.js.map": "/react-portfolio/static/js/2.a31f16cb.chunk.js.map",
+    "static/js/3.2a7d8172.chunk.js": "/react-portfolio/static/js/3.2a7d8172.chunk.js",
+    "static/js/3.2a7d8172.chunk.js.map": "/react-portfolio/static/js/3.2a7d8172.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.5d6837d2.chunk.css.map": "/react-portfolio/static/css/main.5d6837d2.chunk.css.map",
-    "static/js/2.56b1c3cd.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.56b1c3cd.chunk.js.LICENSE.txt",
+    "static/js/2.a31f16cb.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.a31f16cb.chunk.js.LICENSE.txt",
     "static/media/budget-tracker.f9c11265.png": "/react-portfolio/static/media/budget-tracker.f9c11265.png",
     "static/media/dashboard.f26a2731.png": "/react-portfolio/static/media/dashboard.f26a2731.png",
+    "static/media/lite-speed.d4aa17b0.png": "/react-portfolio/static/media/lite-speed.d4aa17b0.png",
     "static/media/peyton.375a8b7a.png": "/react-portfolio/static/media/peyton.375a8b7a.png",
     "static/media/simplyreuse.4f3cc944.png": "/react-portfolio/static/media/simplyreuse.4f3cc944.png",
     "static/media/tune-out.1060158a.png": "/react-portfolio/static/media/tune-out.1060158a.png",
@@ -21,9 +22,9 @@
     "static/media/work-day-scheduler.9e7765aa.png": "/react-portfolio/static/media/work-day-scheduler.9e7765aa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.700f04d3.js",
-    "static/js/2.56b1c3cd.chunk.js",
+    "static/js/runtime-main.aef1985b.js",
+    "static/js/2.a31f16cb.chunk.js",
     "static/css/main.5d6837d2.chunk.css",
-    "static/js/main.9101a7c3.chunk.js"
+    "static/js/main.bb9bb73b.chunk.js"
   ]
 }

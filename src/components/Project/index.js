@@ -5,6 +5,7 @@ import WD from '../../images/weather-dashboard.png';
 import workDay from '../../images/work-day-scheduler.png';
 import budget from '../../images/budget-tracker.png';
 import webDevBlogs from '../../images/dashboard.png';
+import liteSpeed from '../../images/lite-speed.png';
 
 const projects = [
     {
@@ -55,6 +56,14 @@ const projects = [
         url: 'https://web-dev-blogs.herokuapp.com/',
         github: 'https://github.com/pschlafley/Tech-Blog'
     },
+    {
+        name: 'Lite Speed',
+        src: liteSpeed,
+        alt: ``,
+        technologies: ['CSS / JavaScript / bcrypt / React / MongoDB / Mongoose / Apollo / Express / JWT / Concurrently / GraphQL / React-Router / React-bootstrap  '],
+        url: 'https://lite-speed.herokuapp.com/',
+        github: 'https://github.com/pschlafley/lite-speed'
+    }
 ]
 
 const Project = () => {

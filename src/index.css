@@ -243,13 +243,10 @@ button:hover {
 }
 
 .about-image {
-	/* display: block;
+	display: block;
 	margin: 0 auto 0 auto;
 	width: 35%;
-	padding-right: 10px; */
-	width: 40%;
-	float: left;
-	margin: 20px 15px 15px 50px;
+	padding-right: 10px;
 }
 
 .brand-statement {

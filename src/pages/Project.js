@@ -1,10 +1,10 @@
 import React from 'react';
-import tuneOut from '../../images/tune-out.png'
-import simplyReuse from '../../images/simplyreuse.png';
-import WD from '../../images/weather-dashboard.png';
-import workDay from '../../images/work-day-scheduler.png';
-import budget from '../../images/budget-tracker.png';
-import webDevBlogs from '../../images/dashboard.png';
+import tuneOut from '../images/tune-out.png'
+import simplyReuse from '../images/simplyreuse.png';
+import WD from '../images/weather-dashboard.png';
+import workDay from '../images/work-day-scheduler.png';
+import budget from '../images/budget-tracker.png';
+import webDevBlogs from '../images/dashboard.png';
 
 const projects = [
     {

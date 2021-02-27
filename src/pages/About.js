@@ -1,5 +1,5 @@
 import React from 'react';
-import myPhoto from '../../images/peyton.png';
+import myPhoto from '../images/peyton.png';
 import Image from 'react-bootstrap/Image';
 
 function About() {

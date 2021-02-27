@@ -1,23 +1,45 @@
 import React from 'react';
-import Navigation from '../Navigation';
+import { Link } from 'react-router-dom';
 
-
-const Header = (props) => {
-
-    const { currentPage, setCurrentPage } = props;
+const Header = () => {
 
     return (
         <div>
-            <div className='div-center center-align pt-5'>
-                <span className='color-1 font-1 font-weight-lighter'>Peyton</span>
-                <span className='font-1 font-italic font-weight-bold color-4'>S.</span>
-            </div>
             <div className='flex-row pt-3 pr-5 box'>
-                <Navigation
-                    tabs={props.tabs}
-                    currentPage={currentPage}
-                    setCurrentPage={setCurrentPage}
-                />
+                <ul className='flex-row'>
+                    <li className='pointer px-2 cs-2 my-2 list-style'>
+                        <Link
+                            to='/about-me'
+                            className='non-active'
+                        >
+                            About Me
+                        </Link>
+                    </li>
+                    <li className='pointer px-2 cs-2 my-2 list-style'>
+                        <Link
+                            to='/portfolio'
+                            className='non-active'
+                        >
+                            Portfolio
+                        </Link>
+                    </li>
+                    <li className='pointer px-2 cs-2 my-2 list-style'>
+                        <Link
+                            to='/resume'
+                            className='non-active'
+                        >
+                            Resume
+                        </Link>
+                    </li>
+                    <li className='pointer px-2 cs-2 my-2 list-style'>
+                        <Link
+                            to='/contact-me'
+                            className='non-active'
+                        >
+                            Contact Me
+                        </Link>
+                    </li>
+                </ul>
             </div>
         </div>
     );

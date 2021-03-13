@@ -51,6 +51,10 @@ body {
 	color: var(--burnt-sienna);
 }
 
+.fa-mailchimp:hover {
+	color: var(--burnt-sienna);
+}
+
 .color-1 {
 	color: var(--orange-yellow-crayola);
 }

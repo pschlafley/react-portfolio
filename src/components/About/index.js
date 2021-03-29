@@ -5,18 +5,19 @@ import Image from 'react-bootstrap/Image';
 function About() {
     return (
         <section className='pt-3'>
-            <h2 className='my-5 px-2 cs-2 pt-2 section-title'>About Me</h2>
             <Image src={myPhoto} className='about-image' />
+            <h2 className='my-5 px-2 cs-2 pt-2 section-title'>Back-end Web Developer</h2>
             <div>
+                <h3 className='pt-5 section-title'>Who am I?</h3>
                 <p id='brand-statement' className=' brand-statement '>
-                    Hi, I'm Peyton Schlafley.<br />
-                    I am a Full-Stack web developer.
-                    <br />
-                    Throughout my life I have always been involved in sports, my favorite sport being soccer. My favorite part about playing soccer is not only the competiveness of the sport, but also how much of a team sport it is. You can't win a game without good communication, and the ability to solve problems and look for ways to score goals.
-                    I am a hard worker with good communication, problem solving skills, and a willingness to take on new challenges and learn new skills.
-                    <br />
-                    I recently graduated with a certificate in full stack Web Development from the University of Pennsylvania's Coding Bootcamp, who partners with Trilogy Education Services, where I have learned the technical skills needed to be a highly effective and efficient Web Developer.
-                    With proficiency in the MERN stack, which includes MondoDB, Express, React, and Node.js, I make fast and functional web applications so that you don't have to worry about it!
+                    My name is Peyton Schlafley. <br />
+                    I am a full stack developer with experience in customer service to build quality user experiences in web applications.
+                    Recently earned a certificate in full stack development from the University of Pennsylvannia, enhancing my skills in
+                    JavaScript, Express.js, React.js, Node.js, and MongoDB. Constantly building upon knowledge learned from the bootcamp, as well as trying to learn
+                    new things, such as Java and object oriented programming! Passionate about working with others to develop meaningful web applications
+                    with a focus on working with backend technologies. I utilized my skills to help my team of four create a MERN stack application tha implemented
+                    Graphql to build a learning platform for people to expand their skill sets. <br />
+                    It is my technical skills, passion, and leadership that make me an advantageous candidate for any team!
                 </p>
             </div>
         </section >

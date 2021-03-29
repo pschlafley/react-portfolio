@@ -54,9 +54,6 @@ const Resume = () => {
     return (
         <div className='pt-5 div-center'>
             <h1 className='section-title'>Resume</h1>
-            <div className='w-25'>
-                <p id='resume'>View my <a href='https://drive.google.com/file/d/1uwTtnRiq4hdjnw8tVz7Z0uqXJIJOzlNp/view?usp=sharing' target='_blank' rel='noreferrer' download='' className='resume-link'>resume</a></p>
-            </div>
             <h2 className='font-weight-lighter pt-5'>Front-End Proficiencies</h2>
             <ul className='pt-3'>
                 {frontEnd.map((tech, i) => {

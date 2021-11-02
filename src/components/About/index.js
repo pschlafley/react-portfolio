@@ -14,8 +14,8 @@ function About() {
                     I am a full stack developer with experience in customer service to build quality user experiences in web applications.
                     Recently earned a certificate in full stack development from the University of Pennsylvannia, enhancing my skills in
                     JavaScript, Express.js, React.js, Node.js, and MongoDB. Constantly building upon knowledge learned from the bootcamp, as well as trying to learn
-                    new things, such as Java and object oriented programming! Passionate about working with others to develop meaningful web applications
-                    with a focus on working with backend technologies. I utilized my skills to help my team of four create a MERN stack application tha implemented
+                    new things, such as Python and object oriented programming! Passionate about working with others to develop meaningful web applications
+                    with a focus on working with backend technologies. I utilized my skills to help my team of four create a MERN stack application that implemented
                     Graphql to build a learning platform for people to expand their skill sets. <br />
                     It is my technical skills, passion, and leadership that make me an advantageous candidate for any team!
                 </p>

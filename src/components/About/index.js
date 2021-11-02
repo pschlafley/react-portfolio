@@ -6,7 +6,7 @@ function About() {
     return (
         <section className='pt-3'>
             <Image src={myPhoto} className='about-image' />
-            <h2 className='my-5 px-2 cs-2 pt-2 section-title'>Back-end Web Developer</h2>
+            <h2 className='my-5 px-2 cs-2 pt-2 section-title'>Full Stack Web Developer</h2>
             <div>
                 <h3 className='pt-5 section-title'>Who am I?</h3>
                 <p id='brand-statement' className=' brand-statement '>

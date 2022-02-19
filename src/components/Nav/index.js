@@ -5,8 +5,13 @@ import s from './nav.module.css';
 
 const NavBar = () => {
     return (
-        <div className={s.container}>
-            <Link to='/About-Me'><h3>About Me</h3></Link>
+        <div className={s.navContainer}>
+            <Link className={s.link} to='/About-Me'>
+                <button className={s.linkChild}>About Me</button>
+            </Link>
+            <Link className={s.link} to='/Projects'>
+                <button className={s.linkChild}>My Projects</button>
+            </Link>
         </div>
     );
 };

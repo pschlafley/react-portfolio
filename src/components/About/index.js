@@ -6,7 +6,6 @@ const About = () => {
     return (
         <div className={s.backgroundColor}>
             <h1>This is About Me Page</h1>
-
             <Link to='/'>Home</Link>
         </div>
     )

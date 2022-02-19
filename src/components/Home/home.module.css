@@ -1,0 +1,10 @@
+.backgroundColor {
+	color: white;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+}

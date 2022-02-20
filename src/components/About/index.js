@@ -1,13 +1,15 @@
 import React from "react";
 import s from './about.module.css';
-import { Link } from "react-router-dom";
+import NavBar from "../Nav";
 
 const About = () => {
     return (
-        <div className={s.backgroundColor}>
-            <h1>This is About Me Page</h1>
-            <Link to='/'>Home</Link>
-        </div>
+        <>
+            <div className={s.backgroundColor}>
+                <NavBar />
+                <h1>About</h1>
+            </div>
+        </>
     )
 }
 

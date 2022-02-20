@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import NavBar from '../Nav';
+import s from './projects.module.css'
 
 const Projects = () => {
     return (
-        <div>
-            <div>
-                Here Are My Projects:
-            </div>
-            <Link to='/About-Me'><h3>About Me</h3></Link>
+        <div className={s.backgroundColor}>
+            <NavBar />
         </div>
     );
 };

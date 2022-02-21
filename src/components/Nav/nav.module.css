@@ -1,9 +1,7 @@
 .navContainer {
-	position: absolute;
-	top: 5%;
-	left: 40%;
+	margin: 0 2em 0 0;
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	gap: 2em;
 }
 
@@ -19,7 +17,7 @@
 	display: none;
 }
 
-.link {
+.Link {
 	text-decoration: none;
 }
 
@@ -46,4 +44,9 @@
 	background: #39ff14;
 	height: 100%;
 	transform: scaleY(1.1);
+}
+
+.linkChild:hover {
+	transition: color 500ms ease 50ms;
+	color: #39ff14;
 }

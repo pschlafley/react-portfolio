@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import About from './components/About';
+import Contact from './components/Contact';
 import Projects from './components/Projects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/about-Me' element={<About />} />
+        <Route path='/contact-me' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
     </Router>

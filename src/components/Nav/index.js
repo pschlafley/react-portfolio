@@ -15,13 +15,13 @@ const NavBar = () => {
         <div className={s.navContainer}>
             <>
                 <Link id='home' className={s.Link} to='/'>
-                    <h3 className={homeDisplayed ? `${s.hideHome}` : `${s.linkChild}`}>Home</h3>
-                </Link>
-                <Link id='about-me' className={s.Link} to='/contact-me'>
-                    <h3 className={contactDisplayed ? `${s.hideAbout}` : `${s.linkChild}`}>Contact</h3>
+                    <h3 className={homeDisplayed ? `${s.navActive}` : `${s.linkChild}`}>Home</h3>
                 </Link>
                 <Link id='projects' className={s.Link} to='/projects'>
-                    <h3 className={projectDisplayed ? `${s.hideProject}` : `${s.linkChild}`}>My Projects</h3>
+                    <h3 className={projectDisplayed ? `${s.navActive}` : `${s.linkChild}`}>My Projects</h3>
+                </Link>
+                <Link id='about-me' className={s.Link} to='/contact-me'>
+                    <h3 className={contactDisplayed ? `${s.navActive}` : `${s.linkChild}`}>Contact</h3>
                 </Link>
             </>
         </div >

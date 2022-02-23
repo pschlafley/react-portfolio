@@ -8,14 +8,17 @@ const Home = () => {
         <div className={`${s.fullBackground}`}>
             <div>
                 <NavBar />
-                <div className={s.imgContainer}>
-                    <div className={s.whiteBox}></div>
-                    <img src={myImage} alt='picture of Peyton Schlafley' />
-                    <div className={s.txtContainer}>
-                        {/* <div className={s.txtBg}></div> */}
-                        <p>Peyton Schlafley</p>
-                    </div>
+                <div className={`${s.imgContainer}`}>
+                    <div className={`${s.whiteBox} ${s.slideAnimation}`}></div>
+                    <img src={myImage} alt='Peyton Schlafley' />
                 </div>
+                <div className={`${s.txtContainer} ${s.slideAnimation}`}>
+                    <p className={`${s.txtHeader}`}>Hey there, I'm <br /> <span>Peyton Schlafley</span></p>
+                </div>
+            </div>
+
+            <div>
+
             </div>
         </div >
     );

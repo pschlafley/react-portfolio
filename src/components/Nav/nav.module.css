@@ -5,16 +5,8 @@
 	gap: 2em;
 }
 
-.hideHome {
-	display: none;
-}
-
-.hideAbout {
-	display: none;
-}
-
-.hideProject {
-	display: none;
+.navActive {
+	color: #39ff14;
 }
 
 .Link {

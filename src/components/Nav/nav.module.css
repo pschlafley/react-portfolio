@@ -4,6 +4,9 @@
 	justify-content: right;
 	gap: 2em;
 }
+.navContainer:hover {
+	cursor: pointer;
+}
 
 .navActive {
 	color: #39ff14;

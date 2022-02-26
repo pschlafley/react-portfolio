@@ -1,10 +1,9 @@
-import React from 'react';
+import { React } from 'react';
 import { Link } from 'react-router-dom';
 import s from './nav.module.css';
 
 
 const NavBar = () => {
-
     let windowPath = window.location.pathname;
 
     const homeDisplayed = windowPath === '/' ? true : false;

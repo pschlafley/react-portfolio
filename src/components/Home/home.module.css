@@ -1,3 +1,8 @@
+:root {
+	--neon-color: #39ff14;
+	--main-txt-color: white;
+}
+
 .fullBackground {
 	background-color: black;
 	background-attachment: fixed;
@@ -34,13 +39,14 @@ img {
 	top: 20%;
 	left: 25%;
 	border-radius: 15px;
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	box-shadow: 0 10px 30px rgb(0, 0, 0);
 }
 
 .txtContainer {
 	color: white;
 	position: absolute;
-	right: 4%;
+	right: 8%;
+	top: 15%;
 }
 
 .slideAnimation {
@@ -49,9 +55,32 @@ img {
 }
 
 .txtHeader {
-	right: 4%;
 	font-weight: bold;
 	font-size: 4rem;
+}
+
+.bodyContainer {
+	position: relative;
+	color: var(--main-txt-color);
+	text-align: left;
+	top: 90%;
+	margin-left: 1em;
+}
+
+.bodyHeader {
+	text-align: center;
+}
+
+.txtHeader > span {
+	color: var(--neon-color);
+}
+
+.bodyTxt {
+	font-size: 1.5rem;
+}
+
+.bodyTxt > span {
+	color: var(--neon-color);
 }
 
 @keyframes slide {
@@ -60,6 +89,6 @@ img {
 	}
 
 	to {
-		right: 4%;
+		right: 8%;
 	}
 }

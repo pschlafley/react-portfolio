@@ -1,11 +1,10 @@
 .navContainer {
-	margin: 0 2em 0 0;
+	height: 60px;
+	width: 100%;
+	top: 0;
+	left: 0;
 	display: flex;
 	justify-content: right;
-	gap: 2em;
-}
-.navContainer:hover {
-	cursor: pointer;
 }
 
 .navActive {
@@ -14,10 +13,11 @@
 
 .Link {
 	text-decoration: none;
+	padding: 0 2em 0 0;
 }
 
 .linkChild {
-	color: white;
+	color: rgb(255 255 255);
 	position: relative;
 }
 

@@ -1,10 +1,17 @@
 .navContainer {
+	position: fixed;
+	background-color: transparent;
 	height: 60px;
 	width: 100%;
 	top: 0;
-	left: 0;
+	right: 0;
 	display: flex;
 	justify-content: right;
+	z-index: 1;
+}
+
+.navBg {
+	background-color: rgb(80, 80, 80, 0.9);
 }
 
 .navActive {
@@ -13,7 +20,7 @@
 
 .Link {
 	text-decoration: none;
-	padding: 0 2em 0 0;
+	padding: 0 2em 0 0.5em;
 }
 
 .linkChild {

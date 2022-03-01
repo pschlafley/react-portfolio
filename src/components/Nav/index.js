@@ -1,17 +1,18 @@
-import { React } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import s from './nav.module.css';
 
 
-const NavBar = () => {
+const NavBar = (props) => {
     let windowPath = window.location.pathname;
 
     const homeDisplayed = windowPath === '/' ? true : false;
     const contactDisplayed = windowPath === '/contact-me' ? true : false;
     const projectDisplayed = windowPath === '/projects' ? true : false;
 
+    let scrollPos = props.scroll;
     return (
-        <div className={s.navContainer}>
+        <div className={scrollPos > 60 ? `${s.navContainer} ${s.navBg}` : `${s.navContainer}`}>
             <>
                 <Link id='home' className={s.Link} to='/'>
                     <h3 className={homeDisplayed ? `${s.navActive}` : `${s.linkChild}`}>Home</h3>

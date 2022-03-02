@@ -29,7 +29,7 @@ const Home = () => {
 
                 <div className={`${s.bodyContainer}`}>
                     <div className={s.bodyHeader}>
-                        <p className={`${s.txtHeader}`}>Full Stack <span>Web Developer</span></p>
+                        <p className={`${s.bodyTxtHeader}`}>Full Stack <span>Web Developer</span></p>
                     </div>
                     <p className={`${s.bodyTxt}`}>
                         I began my learning as a web developer July of 2019

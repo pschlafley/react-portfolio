@@ -19,11 +19,11 @@
 .whiteBox {
 	display: flex;
 	flex-flow: column;
-	width: 40%;
 	height: 500px;
+	width: 30%;
 	position: absolute;
-	left: 15%;
-	top: 30%;
+	left: 14%;
+	top: 24%;
 	background-color: whitesmoke;
 	border-radius: 15px;
 }
@@ -35,23 +35,30 @@
 
 img {
 	height: 500px;
-	width: auto;
+	width: 30%;
 	position: absolute;
-	top: 20%;
-	left: 25%;
+	top: 25%;
+	left: 15%;
 	border-radius: 15px;
-	box-shadow: 0 10px 30px rgb(0, 0, 0);
+	box-shadow: 0 5px 30px rgb(0, 0, 0);
+}
+
+img:hover {
+	box-shadow: none;
+	left: 14%;
+	top: 24%;
+	transition: all 0.5s ease;
 }
 
 .txtContainer {
 	color: white;
 	position: absolute;
-	right: 8%;
+	right: 10%;
 	top: 15%;
 }
 
 .slideAnimation {
-	animation: slide 1s;
+	animation: slide 2s;
 	transition: animation 2.5s;
 }
 
@@ -72,11 +79,17 @@ img {
 	text-align: center;
 }
 
-.txtHeader > span {
+.bodyTxtHeader {
+	font-weight: bold;
+	font-size: 4rem;
+}
+
+.bodyTxtHeader > span {
 	color: var(--neon-color);
 }
 
 .bodyTxt {
+	margin: 1em;
 	font-size: 1.5rem;
 }
 
@@ -90,6 +103,80 @@ img {
 	}
 
 	to {
-		right: 8%;
+		right: 10%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.txtContainer {
+		right: 7%;
+	}
+
+	.whiteBox {
+		left: 8%;
+		top: 15%;
+	}
+
+	img {
+		left: 15%;
+		top: 10%;
+	}
+
+	.bodyContainer {
+		top: 80%;
+	}
+
+	@keyframes slide {
+		from {
+			right: -50%;
+		}
+
+		to {
+			right: 7%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.txtContainer {
+		right: 7%;
+	}
+
+	.txtHeader {
+		font-size: 3rem;
+	}
+
+	.whiteBox {
+		height: 400px;
+		left: 6%;
+		top: 18%;
+	}
+
+	img {
+		height: 400px;
+		left: 7%;
+		top: 17%;
+	}
+
+	.bodyContainer {
+		top: 80%;
+	}
+
+	.bodyTxtHeader {
+		font-size: 3rem;
+	}
+
+	.bodyTxt {
+		font-size: 1.5rem;
+	}
+
+	@keyframes slide {
+		from {
+			right: -50%;
+		}
+
+		to {
+			right: 7%;
+		}
 	}
 }

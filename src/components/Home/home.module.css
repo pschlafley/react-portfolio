@@ -3,19 +3,6 @@
 	--main-txt-color: white;
 }
 
-.fullBackground {
-	background-color: black;
-	background-attachment: fixed;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	scroll-behavior: smooth;
-}
-
 .whiteBox {
 	display: flex;
 	flex-flow: column;
@@ -68,7 +55,7 @@ img:hover {
 }
 
 .bodyContainer {
-	position: relative;
+	position: absolute;
 	color: var(--main-txt-color);
 	text-align: left;
 	top: 90%;
@@ -91,6 +78,10 @@ img:hover {
 .bodyTxt {
 	margin: 1em;
 	font-size: 1.5rem;
+}
+
+.marginBottom {
+	margin-bottom: 5em;
 }
 
 .bodyTxt > span {

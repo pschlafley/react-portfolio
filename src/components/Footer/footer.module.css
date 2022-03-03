@@ -1,0 +1,20 @@
+.fWrap {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	padding: 1em 1em;
+	color: white;
+	gap: 3em;
+}
+
+.myIcon {
+	color: white;
+	font-size: 3em;
+}
+
+.myIcon:hover {
+	color: #39ff14;
+	transition: color 0.75s ease;
+}

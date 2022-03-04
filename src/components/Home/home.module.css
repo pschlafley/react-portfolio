@@ -3,18 +3,6 @@
 	--main-txt-color: white;
 }
 
-.whiteBox {
-	display: flex;
-	flex-flow: column;
-	height: 500px;
-	width: 30%;
-	position: absolute;
-	left: 14%;
-	top: 24%;
-	background-color: whitesmoke;
-	border-radius: 15px;
-}
-
 .imgContainer {
 	display: flex;
 	justify-content: right;
@@ -22,18 +10,16 @@
 
 img {
 	height: 500px;
-	width: 30%;
+	width: auto;
 	position: absolute;
 	top: 25%;
 	left: 15%;
 	border-radius: 15px;
-	box-shadow: 0 5px 30px rgb(0, 0, 0);
+	box-shadow: none;
 }
 
 img:hover {
-	box-shadow: none;
-	left: 14%;
-	top: 24%;
+	box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.8);
 	transition: all 0.5s ease;
 }
 
@@ -41,7 +27,7 @@ img:hover {
 	color: white;
 	position: absolute;
 	right: 10%;
-	top: 15%;
+	top: 25%;
 }
 
 .slideAnimation {
@@ -50,8 +36,12 @@ img:hover {
 }
 
 .txtHeader {
-	font-weight: bold;
+	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	gap: 1em;
 	font-size: 4rem;
+	font-weight: bold;
 }
 
 .bodyContainer {
@@ -71,7 +61,8 @@ img:hover {
 	font-size: 4rem;
 }
 
-.bodyTxtHeader > span {
+.bodyTxtHeader span {
+	text-decoration: none;
 	color: var(--neon-color);
 }
 
@@ -84,7 +75,7 @@ img:hover {
 	margin-bottom: 5em;
 }
 
-.bodyTxt > span {
+.bodyTxt > a {
 	color: var(--neon-color);
 }
 
@@ -100,17 +91,16 @@ img:hover {
 
 @media screen and (max-width: 1440px) {
 	.txtContainer {
+		top: 15%;
 		right: 7%;
 	}
 
-	.whiteBox {
-		left: 8%;
-		top: 15%;
-	}
-
 	img {
-		left: 15%;
-		top: 10%;
+		margin: 1em;
+		height: 450px;
+		width: auto;
+		left: 10%;
+		top: 14%;
 	}
 
 	.bodyContainer {
@@ -135,12 +125,6 @@ img:hover {
 
 	.txtHeader {
 		font-size: 3rem;
-	}
-
-	.whiteBox {
-		height: 400px;
-		left: 6%;
-		top: 18%;
 	}
 
 	img {

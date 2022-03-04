@@ -12,7 +12,15 @@ const Home = () => {
                         <img src={myImage} alt='Peyton Schlafley' />
                     </div>
                     <div className={`${s.txtContainer} ${s.slideAnimation}`}>
-                        <p className={`${s.txtHeader}`}>Hey there, I'm <br />Peyton Schlafley</p>
+                        <p className={`${s.txtHeader}`}>
+                            <span>
+                                Hey there,
+                            </span>
+                            <span>I'm</span>
+                            <span>
+                                Peyton Schlafley
+                            </span>
+                        </p>
                     </div>
                 </div>
 
@@ -27,7 +35,7 @@ const Home = () => {
                         Starting from basic to advanced level HTML, CSS, JavaScript, and then moving on to learning React, MongoDB, Express, REST APIs!
                     </p>
                     <p className={s.bodyTxt}>
-                        Currently, I am working at a small company called <span>Legacy 360° Financial LLC,</span> and as a Freelance Web Developer!
+                        Currently, I am working at a small company called <a href='https://www.legacy360fwm.com/' rel="noreferrer" referrer="no-referrer" target="_blank">Legacy 360° Financial LLC,</a> and as a Freelance Web Developer!
                     </p>
                     <p className={`${s.bodyTxt} ${s.marginBottom}`}>Go ahead and shoot me an email and lets chat about what I can do for you!</p>
                 </div>

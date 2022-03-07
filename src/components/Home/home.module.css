@@ -155,3 +155,10 @@ img:hover {
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.txtContainer {
+		display: flex;
+		flex-direction: row;
+	}
+}

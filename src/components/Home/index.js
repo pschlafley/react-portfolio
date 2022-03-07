@@ -14,9 +14,9 @@ const Home = () => {
                     <div className={`${s.txtContainer} ${s.slideAnimation}`}>
                         <p className={`${s.txtHeader}`}>
                             <span>
-                                Hey there,
+                                Hello
                             </span>
-                            <span>I'm</span>
+                            <span>My Name Is</span>
                             <span>
                                 Peyton Schlafley
                             </span>

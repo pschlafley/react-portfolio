@@ -5,22 +5,10 @@ import s from './home.module.css';
 const Home = () => {
     return (
         <>
-            <div id='fullBg' className={`${s.fullBackground}`}>
+            <div id=''>
                 <div>
                     <div className={`${s.imgContainer}`}>
-                        <div className={`${s.whiteBox}`}></div>
                         <img src={myImage} alt='Peyton Schlafley' />
-                    </div>
-                    <div className={`${s.txtContainer} ${s.slideAnimation}`}>
-                        <p className={`${s.txtHeader}`}>
-                            <span>
-                                Hello
-                            </span>
-                            <span>My Name Is</span>
-                            <span>
-                                Peyton Schlafley
-                            </span>
-                        </p>
                     </div>
                 </div>
 
@@ -29,6 +17,7 @@ const Home = () => {
                         <p className={`${s.bodyTxtHeader}`}>Full Stack <span>Web Developer</span></p>
                     </div>
                     <p className={`${s.bodyTxt}`}>
+                        My name is Peyton Schlafley. I grew up in Peoria, Illinois, and I am now living in Pennsylvania with my wife Casey.
                         I began my learning as a web developer July of 2019
                         when I decide to join Pennsylvania University's Full Stack Bootcamp. <br />
                         During the bootcamp we learned the technologies necessary to code full stack web applications.

@@ -12,8 +12,8 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/contact-me' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/contact-me' element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode>,

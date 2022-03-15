@@ -14,11 +14,13 @@ const NavBar = (props) => {
     return (
         <div className={scrollPos > 60 ? `${s.navContainer} ${s.navBg}` : `${s.navContainer}`}>
             <div className={s.navChild}>
-                pschlafley0@gmail.com
+                <p className={s.email}>
+                    pschlafley0@gmail.com
+                </p>
             </div>
             <div className={s.navChild}>
                 <Link id='home' className={s.Link} to='/'>
-                    <h3 className={homeDisplayed ? `${s.navActive}` : `${s.linkChild}`}>Home</h3>
+                    <h3 className={homeDisplayed ? `${s.navActive}` : `${s.linkChild}`}>About Me</h3>
                 </Link>
                 <Link id='projects' className={s.Link} to='/projects'>
                     <h3 className={projectDisplayed ? `${s.navActive}` : `${s.linkChild}`}>My Projects</h3>

@@ -21,7 +21,7 @@ function App() {
       <div>
         <Home />
       </div>
-      <div className={scrollTop < 400 ? 'hide-footer' : 'foot-container'}>
+      <div className={scrollTop < 380 ? 'hide-footer' : 'foot-container'}>
         <Footer />
       </div>
     </div >

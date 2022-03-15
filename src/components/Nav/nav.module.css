@@ -7,8 +7,13 @@
 	z-index: 1;
 }
 
+.email {
+	color: #f7f636;
+	margin: 0;
+}
+
 .navBg {
-	background-color: rgb(80, 80, 80, 0.9);
+	background-color: #3d3b37;
 }
 
 .navActive {

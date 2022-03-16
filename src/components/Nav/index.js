@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import s from './nav.module.css';
 
 
 const NavBar = (props) => {
-    let windowPath = window.location.pathname;
+    let windowPath = useLocation().pathname;
 
     const homeDisplayed = windowPath === '/' ? true : false;
     const contactDisplayed = windowPath === '/contact-me' ? true : false;

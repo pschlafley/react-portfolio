@@ -9,6 +9,14 @@ body {
 	width: 100%;
 }
 
+.home-bg {
+	background-color: black;
+}
+
+.projects-bg {
+	background-color: #3d3b37;
+}
+
 .content-wrap {
 	background-color: black;
 	background-attachment: fixed;

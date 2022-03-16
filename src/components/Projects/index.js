@@ -3,7 +3,7 @@ import NavBar from '../Nav';
 import s from './projects.module.css'
 
 const Projects = () => {
-    const wrap = document.getElementById('content-wrap');
+    // const wrap = document.getElementById('content-wrap');
     // console.log(wrap)
     return (
         // <div className={s.backgroundColor}>

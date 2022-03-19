@@ -11,6 +11,7 @@ const NavBar = (props) => {
     const projectDisplayed = windowPath === '/projects' ? true : false;
 
     let scrollPos = props.scroll;
+
     return (
         <div className={scrollPos > 60 ? `${s.navContainer} ${s.navBg}` : `${s.navContainer}`}>
             <div className={s.navChild}>

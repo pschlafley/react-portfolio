@@ -73,16 +73,16 @@
 		right: 7%;
 	}
 
-	img {
+	.myPhoto {
 		margin: 1em;
 		height: 450px;
 		width: auto;
-		left: 10%;
-		top: 14%;
+		left: 34%;
+		top: 15%;
 	}
 
 	.bodyContainer {
-		top: 80%;
+		top: 75%;
 	}
 
 	@keyframes slide {
@@ -105,9 +105,9 @@
 		font-size: 3rem;
 	}
 
-	img {
+	.myPhoto {
 		height: 400px;
-		left: 7%;
+		left: 28%;
 		top: 17%;
 	}
 
@@ -122,21 +122,10 @@
 	.bodyTxt {
 		font-size: 1.5rem;
 	}
-
-	@keyframes slide {
-		from {
-			right: -50%;
-		}
-
-		to {
-			right: 7%;
-		}
-	}
 }
 
 @media screen and (max-width: 768px) {
-	.txtContainer {
-		display: flex;
-		flex-direction: row;
+	.myPhoto {
+		left: 20%;
 	}
 }

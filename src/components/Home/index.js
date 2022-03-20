@@ -17,10 +17,8 @@ const Home = () => {
                     ease: 'easeIn'
                 }}
             >
-                <div>
-                    <div className={`${s.imgContainer}`}>
-                        <img className={s.myPhoto} src={myImage} alt='Peyton Schlafley' />
-                    </div>
+                <div className={`${s.imgContainer}`}>
+                    <img className={s.myPhoto} src={myImage} alt='Peyton Schlafley' />
                 </div>
 
                 <div className={`${s.bodyContainer}`}>

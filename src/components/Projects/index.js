@@ -83,13 +83,15 @@ const Projects = () => {
         <>
             <div className={s.projectsContainer}>
                 {projects.map((project, i) => (
-                    <div>
-                        <img
-                            className={s.pics}
-                            src={project.src}
-                            alt={project.alt}
-                            key={i}
-                        />
+                    <div className={s.projectCarWapper}>
+                        <div className={s.card}>
+                            <img
+                                className={s.pics}
+                                src={project.src}
+                                alt={project.alt}
+                                key={i}
+                            />
+                        </div>
                     </div>
                 ))}
             </div>

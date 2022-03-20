@@ -23,9 +23,9 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact-me' element={<Contact />} />
       </Routes>
-      <div className={scrollTop < 380 ? 'hide-footer' : 'foot-container'}>
+      {/* <div className={scrollTop < 380 ? 'hide-footer' : 'foot-container'}>
         <Footer />
-      </div>
+      </div> */}
     </div >
   );
 }

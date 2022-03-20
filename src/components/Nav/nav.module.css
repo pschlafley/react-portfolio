@@ -5,11 +5,8 @@
 	top: 0;
 	right: 0;
 	z-index: 1;
-}
-
-.email {
-	color: #f7f636;
-	margin: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .navBg {
@@ -22,7 +19,7 @@
 
 .navChild {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	color: rgb(255 255 255);
 	margin-top: 5px;
 }
@@ -60,4 +57,31 @@
 .linkChild:hover {
 	transition: color 500ms ease 50ms;
 	color: #39ff14;
+}
+
+.iconWrap {
+	margin-top: 20px;
+}
+
+.myIcon {
+	color: white;
+	font-size: 2em;
+	padding-left: 5px;
+}
+
+.myIcon:hover {
+	color: #f7f636;
+	cursor: pointer;
+	transition: color 0.75s ease;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.email {
+	color: #f7f636;
+	position: absolute;
+	margin: 0 0 0 10px;
+	top: 0;
 }

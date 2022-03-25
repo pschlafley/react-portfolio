@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import tuneOut from '../../assets/images/tune-out.png'
 import simplyReuse from '../../assets/images/simplyreuse.png';
 import WD from '../../assets/images/weather-dashboard.png';
@@ -12,6 +12,7 @@ const Projects = () => {
 
     const projects = [
         {
+            id: '1',
             name: 'Tune Out',
             src: tuneOut,
             alt: '',
@@ -20,6 +21,7 @@ const Projects = () => {
             github: 'https://github.com/bspiewak6/music'
         },
         {
+            id: '2',
             name: 'Simply ReUse',
             src: simplyReuse,
             alt: ``,
@@ -28,6 +30,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/Simply-ReUse'
         },
         {
+            id: '3',
             name: 'Weather Dashboard',
             src: WD,
             alt: ``,
@@ -36,6 +39,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/weatherDashboard'
         },
         {
+            id: '4',
             name: 'Work Day Scheduler',
             src: workDay,
             alt: ``,
@@ -44,6 +48,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/Scheduler'
         },
         {
+            id: '5',
             name: 'Budget Tracker',
             src: budget,
             alt: ``,
@@ -52,6 +57,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/budget-tracker'
         },
         {
+            id: '6',
             name: 'Web Dev Blogs',
             src: webDevBlogs,
             alt: ``,
@@ -60,6 +66,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/Tech-Blog'
         },
         {
+            id: '7',
             name: 'Lite Speed',
             src: liteSpeed,
             alt: ``,
@@ -69,31 +76,81 @@ const Projects = () => {
         }
     ]
 
-    const [displayTxt, setDisplayTxt] = useState(false);
 
-    const handleDisplay = () => {
-        setDisplayTxt(true);
-    };
-
-    const hideElem = () => {
-        setDisplayTxt(false)
-    }
 
     return (
         <>
             <div className={s.projectsContainer}>
-                {projects.map((project, i) => (
-                    <div className={s.projectCarWapper}>
-                        <div className={s.card}>
-                            <img
-                                className={s.pics}
-                                src={project.src}
-                                alt={project.alt}
-                                key={i}
-                            />
+                <div className={s.card}>
+                    <img
+                        id={projects[0].id}
+                        className={`${s.pics}`}
+                        src={projects[0].src}
+                        alt={projects[0].alt}
+                    />
+                    <div className={s.cardContent}>
+                        <h3 className={s.cardHeader}>{projects[0].name}</h3>
+                        <div className={s.description}>
+                            <p>{projects[0].technologies}</p>
                         </div>
                     </div>
-                ))}
+                </div>
+                <div className={s.card}>
+                    <img
+                        id={projects[1].id}
+                        className={`${s.pics}`}
+                        src={projects[1].src}
+                        alt={projects[1].alt}
+                    />
+                    <div className={s.cardContent}>
+                        <h3 className={s.cardHeader}>{projects[1].name}</h3>
+                        <div className={s.description}>
+                            <p>{projects[1].technologies}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={s.card}>
+                    <img
+                        id={projects[2].id}
+                        className={`${s.pics}`}
+                        src={projects[2].src}
+                        alt={projects[2].alt}
+                    />
+                    <div className={s.cardContent}>
+                        <h3 className={s.cardHeader}>{projects[2].name}</h3>
+                        <div className={s.description}>
+                            <p>{projects[2].technologies}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={s.card}>
+                    <img
+                        id={projects[3].id}
+                        className={`${s.pics}`}
+                        src={projects[3].src}
+                        alt={projects[3].alt}
+                    />
+                    <div className={s.cardContent}>
+                        <h3 className={s.cardHeader}>{projects[3].name}</h3>
+                        <div className={s.description}>
+                            <p>{projects[3].technologies}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={s.card}>
+                    <img
+                        id={projects[4].id}
+                        className={`${s.pics}`}
+                        src={projects[4].src}
+                        alt={projects[4].alt}
+                    />
+                    <div className={s.cardContent}>
+                        <h3 className={s.cardHeader}>{projects[4].name}</h3>
+                        <div className={s.description}>
+                            <p>{projects[4].technologies}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );

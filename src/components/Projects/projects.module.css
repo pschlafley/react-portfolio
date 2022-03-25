@@ -1,36 +1,32 @@
 .projectsContainer {
-	margin-top: 10%;
-	width: 100%;
-	height: 100%;
-}
-
-.projectCardWrapper {
-	width: 100%;
+	margin: 10%;
+	overflow-x: hidden;
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: center;
-	position: relative;
-	margin: auto;
-	flex-wrap: wrap;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: -2px 0 8px 0 white;
 }
 
 .card {
+	background-color: black;
 	width: 30em;
 	margin: 10px;
 	position: relative;
-	/* border-radius: 16px; */
+	border-radius: 15px;
 	overflow: hidden;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid white;
 }
 
-.project {
-	width: 100%;
-	height: 100%;
-	/* background-image: url('../../assets/images/lite-speed.png');
-	background-position: center;
-	background-position-y: bottom;
-	background-size: 100%;
-	background-repeat: no-repeat; */
+.card:hover {
+	box-shadow: 0 5px 8px 0 rgba(187, 170, 170, 0.9);
+	transition: box-shadow 0.25s ease-in;
+}
+
+.cardContent {
+	color: white;
+	text-align: center;
 }
 
 .pics {
@@ -38,6 +34,13 @@
 	height: 100%;
 }
 
-.hide {
-	display: none;
+.showLinks {
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+}
+
+.description {
+	margin: 0 5px 0 5px;
+	text-align: center;
 }

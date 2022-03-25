@@ -10,7 +10,7 @@
 }
 
 .navBg {
-	background-color: #3d3b37;
+	background-color: rgb(128, 128, 128);
 }
 
 .navActive {
@@ -19,7 +19,6 @@
 
 .navChild {
 	display: flex;
-	/* justify-content: center; */
 	color: rgb(255 255 255);
 	margin-top: 5px;
 }

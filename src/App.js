@@ -2,7 +2,6 @@ import { React, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import './app.css'
-import Footer from './components/Footer';
 import NavBar from './components/Nav';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
@@ -23,9 +22,6 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact-me' element={<Contact />} />
       </Routes>
-      {/* <div className={scrollTop < 380 ? 'hide-footer' : 'foot-container'}>
-        <Footer />
-      </div> */}
     </div >
   );
 }

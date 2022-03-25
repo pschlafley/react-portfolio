@@ -35,7 +35,7 @@ const Home = () => {
                     <p className={s.bodyTxt}>
                         Currently, I am working at a small company called <a href='https://www.legacy360fwm.com/' rel="noreferrer" referrer="no-referrer" target="_blank">Legacy 360° Financial LLC,</a> and as a Freelance Web Developer!
                     </p>
-                    <p className={`${s.bodyTxt} ${s.marginBottom}`}>Go ahead and shoot me an email and lets chat about what I can do for you!</p>
+                    <p className={`${s.bodyTxt}`}>Go ahead and shoot me an email and lets chat about what I can do for you!</p>
                 </div>
             </motion.div>
         </>

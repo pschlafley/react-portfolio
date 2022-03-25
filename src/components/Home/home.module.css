@@ -49,22 +49,8 @@
 	font-size: 1.5rem;
 }
 
-.marginBottom {
-	margin-bottom: 5em;
-}
-
 .bodyTxt > a {
 	color: var(--neon-color);
-}
-
-@keyframes slide {
-	from {
-		right: -50%;
-	}
-
-	to {
-		right: 10%;
-	}
 }
 
 @media screen and (max-width: 1440px) {
@@ -83,16 +69,6 @@
 
 	.bodyContainer {
 		top: 75%;
-	}
-
-	@keyframes slide {
-		from {
-			right: -50%;
-		}
-
-		to {
-			right: 7%;
-		}
 	}
 }
 

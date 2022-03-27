@@ -1,0 +1,107 @@
+:root {
+	--neon-color: #39ff13;
+	--main-txt-color: white;
+}
+
+.myPhoto {
+	height: 500px;
+	width: auto;
+	position: absolute;
+	top: 20%;
+	left: 34%;
+	border-radius: 15px;
+	box-shadow: none;
+}
+
+.myPhoto:hover {
+	box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.8);
+	transition: all 0.5s ease;
+}
+
+.slideAnimation {
+	animation: slide 2s;
+	transition: animation 2.5s;
+}
+
+.bodyContainer {
+	position: absolute;
+	color: var(--main-txt-color);
+	text-align: left;
+	top: 80%;
+	margin-left: 1em;
+}
+
+.bodyHeader {
+	text-align: center;
+}
+
+.bodyTxtHeader {
+	font-size: 4rem;
+}
+
+.bodyTxtHeader span {
+	text-decoration: none;
+	color: var(--neon-color);
+}
+
+.bodyTxt {
+	margin: 1em;
+	font-size: 1.5rem;
+}
+
+.bodyTxt > a {
+	color: var(--neon-color);
+}
+
+@media screen and (max-width: 1440px) {
+	.txtContainer {
+		top: 15%;
+		right: 7%;
+	}
+
+	.myPhoto {
+		margin: 1em;
+		height: 450px;
+		width: auto;
+		left: 34%;
+		top: 15%;
+	}
+
+	.bodyContainer {
+		top: 75%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.txtContainer {
+		right: 7%;
+	}
+
+	.txtHeader {
+		font-size: 3rem;
+	}
+
+	.myPhoto {
+		height: 400px;
+		left: 28%;
+		top: 17%;
+	}
+
+	.bodyContainer {
+		top: 80%;
+	}
+
+	.bodyTxtHeader {
+		font-size: 3rem;
+	}
+
+	.bodyTxt {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.myPhoto {
+		left: 20%;
+	}
+}

@@ -1,43 +1,26 @@
-import './index.css';
-import Header from './components/Header';
-import Footer from './components/Footer'
-import ContactForm from './components/Contact';
-import About from './components/About';
-import Project from './components/Project';
-import Resume from './components/Resume';
-import React, { useState } from 'react';
+import { React, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import './app.css'
+import NavBar from './components/Nav';
+import Projects from './components/Projects';
 
 function App() {
+  const [scrollTop, setScrollTop] = useState(0);
 
-  const [currentPage, setCurrentPage] = useState('About Me');
-
-  const tabs1 = ['About Me', 'Portfolio', 'Resume', 'Contact Me'];
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'Contact Me':
-        return <ContactForm />;
-      case 'Portfolio':
-        return <Project />;
-      case 'Resume':
-        return <Resume />;
-      default:
-        return <About />
-    }
+  const getTopScroll = () => {
+    const top = document.getElementById("content-wrap").scrollTop;
+    setScrollTop(top);
   };
 
   return (
-    <div className='page-container'>
-      <div className='content-wrap'>
-        <Header
-          tabs={tabs1}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-        ></Header>
-        {renderPage(currentPage)}
-        <Footer />
-      </div>
-    </div>
+    <div onScroll={getTopScroll} id='content-wrap' className='content-wrap'>
+      <NavBar scroll={scrollTop} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+    </div >
   );
 }
 

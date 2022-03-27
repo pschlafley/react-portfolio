@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	font-family: Fira Code, Geneva, Verdana, sans-serif;
+	font-weight: 50;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.content-wrap {
+	background-color: black;
+	background-attachment: fixed;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+.foot-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.hide-footer {
+	display: none;
+	transition: all 1s ease;
+}

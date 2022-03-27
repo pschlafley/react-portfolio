@@ -1,20 +1,22 @@
 import React from 'react';
+import s from './footer.module.css';
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-function Footer() {
-
+const Footer = () => {
     return (
-        <footer className="pt-5">
-            <div className='flex-row box'>
-                <div className='pr-5'>
-                    <a target="_blank" href="https://github.com/pschlafley" rel='noreferrer'><i className="color-3 fab fa-github fa-3x"></i></a>
-
-                </div>
-                <div className='pr-5'>
-                    <a href="https://www.linkedin.com/in/peyton-schlafley-81125a1b1/" target="_blank" rel='noreferrer'><i className="color-3 fab fa-linkedin fa-3x"></i></a>
-                </div>
-            </div>
+        <footer className={s.fWrap}>
+            <a rel='noreferrer' referrer="no-referrer" target="_blank" href='https://github.com/pschlafley'>
+                <i className={s.myIcon}>
+                    <FaGithub />
+                </i>
+            </a>
+            <a rel='noreferrer' referrer="no-referrer" target="_blank" href='https://www.linkedin.com/in/peyton-schlafley-81125a1b1/'>
+                <i alt="click here to visit my linkedin profile" className={s.myIcon}>
+                    <FaLinkedinIn />
+                </i>
+            </a>
         </footer>
     )
-}
+};
 
 export default Footer;

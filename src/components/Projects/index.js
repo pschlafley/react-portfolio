@@ -1,11 +1,8 @@
 import React from 'react';
 import tuneOut from '../../assets/images/tune-out.png'
-import simplyReuse from '../../assets/images/simplyreuse.png';
 import WD from '../../assets/images/weather-dashboard.png';
 import workDay from '../../assets/images/work-day-scheduler.png';
-import budget from '../../assets/images/budget-tracker.png';
-import webDevBlogs from '../../assets/images/dashboard.png';
-import liteSpeed from '../../assets/images/lite-speed.png';
+import legacyclientportal from '../../assets/images/legacyclientportal.png'
 import s from './projects.module.css'
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { motion } from 'framer-motion';
@@ -24,15 +21,6 @@ const Projects = () => {
         },
         {
             id: '2',
-            name: 'Simply ReUse',
-            src: simplyReuse,
-            alt: `Simply ReUse Landing Page`,
-            technologies: ['Node.js / Express.js / JavaScript / MySQL Sequelize / Handlebars / bcrypt / dotenv  fuse.js / CSS'],
-            url: 'https://simplyreuse3.herokuapp.com/',
-            github: 'https://github.com/pschlafley/Simply-ReUse'
-        },
-        {
-            id: '3',
             name: 'Weather Dashboard',
             src: WD,
             alt: `Weather Dashboard Landing Page`,
@@ -41,7 +29,7 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/weatherDashboard'
         },
         {
-            id: '4',
+            id: '3',
             name: 'Work Day Scheduler',
             src: workDay,
             alt: `Work Day Scheduler Landing Page`,
@@ -50,31 +38,12 @@ const Projects = () => {
             github: 'https://github.com/pschlafley/Scheduler'
         },
         {
-            id: '5',
-            name: 'Budget Tracker',
-            src: budget,
-            alt: `Budget Tracker Landing Page`,
-            technologies: ['HTML / CSS / JavaScript / MongoDB / Mongoose / Express.js '],
-            url: 'https://budget-tracker100.herokuapp.com/',
-            github: 'https://github.com/pschlafley/budget-tracker'
-        },
-        {
-            id: '6',
-            name: 'Web Dev Blogs',
-            src: webDevBlogs,
-            alt: `Web Dev Blogs Landing Page`,
-            technologies: ['HTML / CSS / JavaScript / bcrypt / connect-session-sequelize / express-handlebars / express-session / mysql2  Sequelize'],
-            url: 'https://web-dev-blogs.herokuapp.com/',
-            github: 'https://github.com/pschlafley/Tech-Blog'
-        },
-        {
-            id: '7',
-            name: 'Lite Speed',
-            src: liteSpeed,
-            alt: `Lite Speed Landing Page`,
-            technologies: ['CSS / JavaScript / bcrypt / React / MongoDB / Mongoose / Apollo / Express / JWT / Concurrently / GraphQL / React-Router / React-bootstrap  '],
-            url: 'https://lite-speed.herokuapp.com/',
-            github: 'https://github.com/pschlafley/lite-speed'
+            id: '4',
+            name: "Legacy 360 Client Portal",
+            src: legacyclientportal,
+            alt: "Legacy 360 Client Portal Home Page",
+            technologies: "React / ViteJS / JavaScript / TailwindCSS / NodeJS / Mongoose / MongoDB / GraphQL / NodeMailer / ejs / RedTail API",
+            url: 'https://legacy360-clientportal.com',
         }
     ]
 
@@ -106,13 +75,17 @@ const Projects = () => {
                             <div className={s.description}>
                                 <p>{projects.technologies}</p>
                             </div>
-                            <div className={s.links}>
-                                <a rel='noreferrer' referrer="no-referrer" target="_blank" href={projects.github}>
-                                    <i className={s.myIcon}>
-                                        <FaGithub />
-                                    </i>
-                                </a>
-                                <a rel='noreferrer' referrer="no-referrer" target="_blank" href={projects.url}>
+                            <div>
+                                {projects.name === "Legacy 360 Client Portal"
+                                    ? <span className={s.privateRepo}>Private Repo</span>
+                                    : <a rel='noreferrer noopener' referrer="no-referrer" target="_blank" href={projects.github}>
+                                        <i className={s.myIcon}>
+                                            <FaGithub />
+                                        </i>
+                                    </a>
+
+                                }
+                                <a rel='noreferrer noopener' referrer="no-referrer" target="_blank" href={projects.url}>
                                     <i className={s.myIcon}>
                                         <FaGlobe />
                                     </i>

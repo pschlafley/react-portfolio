@@ -55,7 +55,7 @@ const NavBar = (props) => {
                     <h3 className={projectDisplayed ? `${s.navActive}` : `${s.linkChild}`}>My Projects</h3>
                 </Link>
             </div>
-        </div >
+        </div>
     );
 };
 

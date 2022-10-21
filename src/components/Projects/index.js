@@ -42,7 +42,7 @@ const Projects = () => {
             name: "Legacy 360 Client Portal",
             src: legacyclientportal,
             alt: "Legacy 360 Client Portal Home Page",
-            technologies: "React / ViteJS / JavaScript / TailwindCSS / NodeJS / Mongoose / MongoDB / GraphQL / NodeMailer / ejs / RedTail API",
+            technologies: "React / ViteJS / JavaScript / TailwindCSS / NodeJS / Mongoose / MongoDB / GraphQL / NodeMailer / ejs / RedTail API / Linode VPS / NGINX",
             url: 'https://legacy360-clientportal.com',
         }
     ]

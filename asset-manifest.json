@@ -1,21 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c3683681.css",
-    "main.js": "/static/js/main.741303b9.js",
+    "main.js": "/static/js/main.0a38cb65.js",
     "static/media/tune-out.png": "/static/media/tune-out.1060158ac8d67fc98f18.png",
-    "static/media/simplyreuse.png": "/static/media/simplyreuse.4f3cc94405649f09adb8.png",
     "static/media/peyton.jpg": "/static/media/peyton.521b12b569a8e0cd5b45.jpg",
-    "static/media/dashboard.png": "/static/media/dashboard.f26a2731a808f64b8086.png",
+    "static/media/legacyclientportal.png": "/static/media/legacyclientportal.937780a210ff3abee450.png",
     "static/media/weather-dashboard.png": "/static/media/weather-dashboard.e58a441622dc525b443b.png",
-    "static/media/budget-tracker.png": "/static/media/budget-tracker.f9c112653734f8f16b27.png",
-    "static/media/lite-speed.png": "/static/media/lite-speed.d4aa17b066eaff3d5fd1.png",
     "static/media/work-day-scheduler.png": "/static/media/work-day-scheduler.9e7765aa077a87c35b07.png",
     "index.html": "/index.html",
     "main.c3683681.css.map": "/static/css/main.c3683681.css.map",
-    "main.741303b9.js.map": "/static/js/main.741303b9.js.map"
+    "main.0a38cb65.js.map": "/static/js/main.0a38cb65.js.map"
   },
   "entrypoints": [
     "static/css/main.c3683681.css",
-    "static/js/main.741303b9.js"
+    "static/js/main.0a38cb65.js"
   ]
 }

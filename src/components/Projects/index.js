@@ -1,7 +1,7 @@
 import React from 'react';
 import tuneOut from '../../assets/images/tune-out.png'
 import workDay from '../../assets/images/work-day-scheduler.png';
-import legacyclientportal from '../../assets/images/legacyclientportal.png'
+import legacyclientportal from '../../assets/images/legacyclientportal1.png'
 import s from './projects.module.css'
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { motion } from 'framer-motion';

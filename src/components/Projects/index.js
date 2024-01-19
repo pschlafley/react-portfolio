@@ -1,6 +1,5 @@
 import React from 'react';
 import tuneOut from '../../assets/images/tune-out.png'
-import WD from '../../assets/images/weather-dashboard.png';
 import workDay from '../../assets/images/work-day-scheduler.png';
 import legacyclientportal from '../../assets/images/legacyclientportal.png'
 import s from './projects.module.css'
@@ -18,15 +17,6 @@ const Projects = () => {
             technologies: ['HTML / CSS / JavaScript / JQuery  Materialize / Taste Dive Api / NYT Api'],
             url: 'https://bspiewak6.github.io/music/',
             github: 'https://github.com/bspiewak6/music'
-        },
-        {
-            id: '2',
-            name: 'Weather Dashboard',
-            src: WD,
-            alt: `Weather Dashboard Landing Page`,
-            technologies: ['HTML / CSS / JavaScript / JQuery / Bootstrap / OpenWeather Api'],
-            url: 'https://pschlafley.github.io/weatherDashboard/',
-            github: 'https://github.com/pschlafley/weatherDashboard'
         },
         {
             id: '3',

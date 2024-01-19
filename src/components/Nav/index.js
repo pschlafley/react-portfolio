@@ -43,7 +43,7 @@ const NavBar = (props) => {
                     </a>
                 </div>
                 <p className={!displayEmail ? `${s.hide}` : `${s.email}`}>
-                    pschlafley0@gmail.com
+                    psjobs234@gmail.com
                 </p>
             </div>
 

@@ -26,16 +26,11 @@ const Home = () => {
                         <p className={`${s.bodyTxtHeader}`}>Full Stack <span>Web Developer</span></p>
                     </div>
                     <p className={`${s.bodyTxt}`}>
-                        My name is Peyton Schlafley. I grew up in Peoria, Illinois, and I am now living in Pennsylvania with my wife Casey.
+                        My name is Peyton Schlafley.
                         I began my learning as a web developer July of 2019
                         when I decide to join Pennsylvania University's Full Stack Bootcamp. <br />
-                        During the bootcamp we learned the technologies necessary to code full stack web applications.
-                        Starting from basic to advanced level HTML, CSS, JavaScript, and then moving on to learning React, MongoDB, Express, REST APIs!
+                        I have four years of overall software development experience, three years of Node, Express, React, Mongo experience. On top of that I also have six months Golang and PostgreSQL experience. Targeting roles that specialize in backend web server and API development.
                     </p>
-                    <p className={s.bodyTxt}>
-                        Currently, I am working at a small company called <a href='https://www.legacy360fwm.com/' rel="noreferrer" referrer="no-referrer" target="_blank">Legacy 360° Financial LLC,</a> and as a Freelance Web Developer!
-                    </p>
-                    <p className={`${s.bodyTxt}`}>Go ahead and shoot me an email and lets chat about what I can do for you!</p>
                 </div>
             </motion.div>
         </>

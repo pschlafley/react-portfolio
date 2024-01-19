@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3683681.css",
-    "main.js": "/static/js/main.57cb3ef4.js",
+    "main.css": "/static/css/main.53bfcdbe.css",
+    "main.js": "/static/js/main.7dc14bb1.js",
+    "static/media/peyton.jpg": "/static/media/peyton.48fa88707c48a7b76f6b.jpg",
     "static/media/tune-out.png": "/static/media/tune-out.1060158ac8d67fc98f18.png",
-    "static/media/peyton.jpg": "/static/media/peyton.521b12b569a8e0cd5b45.jpg",
-    "static/media/legacyclientportal.png": "/static/media/legacyclientportal.937780a210ff3abee450.png",
-    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.e58a441622dc525b443b.png",
+    "static/media/legacyclientportal2.png": "/static/media/legacyclientportal2.072fd53ae112f13757a7.png",
     "static/media/work-day-scheduler.png": "/static/media/work-day-scheduler.9e7765aa077a87c35b07.png",
     "index.html": "/index.html",
-    "main.c3683681.css.map": "/static/css/main.c3683681.css.map",
-    "main.57cb3ef4.js.map": "/static/js/main.57cb3ef4.js.map"
+    "main.53bfcdbe.css.map": "/static/css/main.53bfcdbe.css.map",
+    "main.7dc14bb1.js.map": "/static/js/main.7dc14bb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3683681.css",
-    "static/js/main.57cb3ef4.js"
+    "static/css/main.53bfcdbe.css",
+    "static/js/main.7dc14bb1.js"
   ]
 }
